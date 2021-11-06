@@ -1,0 +1,13 @@
+C:\Users\Irhad Mrndzic\Desktop\IM_IMDB\IMDB_IM\IMDB_IM.Model\bin\Debug\netcoreapp3.1\IMDB_IM.Model.deps.json
+C:\Users\Irhad Mrndzic\Desktop\IM_IMDB\IMDB_IM\IMDB_IM.Model\bin\Debug\netcoreapp3.1\IMDB_IM.Model.dll
+C:\Users\Irhad Mrndzic\Desktop\IM_IMDB\IMDB_IM\IMDB_IM.Model\bin\Debug\netcoreapp3.1\IMDB_IM.Model.pdb
+C:\Users\Irhad Mrndzic\Desktop\IM_IMDB\IMDB_IM\IMDB_IM.Model\obj\Debug\netcoreapp3.1\IMDB_IM.Model.csproj.AssemblyReference.cache
+C:\Users\Irhad Mrndzic\Desktop\IM_IMDB\IMDB_IM\IMDB_IM.Model\obj\Debug\netcoreapp3.1\IMDB_IM.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Irhad Mrndzic\Desktop\IM_IMDB\IMDB_IM\IMDB_IM.Model\obj\Debug\netcoreapp3.1\IMDB_IM.Model.AssemblyInfoInputs.cache
+C:\Users\Irhad Mrndzic\Desktop\IM_IMDB\IMDB_IM\IMDB_IM.Model\obj\Debug\netcoreapp3.1\IMDB_IM.Model.AssemblyInfo.cs
+C:\Users\Irhad Mrndzic\Desktop\IM_IMDB\IMDB_IM\IMDB_IM.Model\obj\Debug\netcoreapp3.1\IMDB_IM.Model.csproj.CoreCompileInputs.cache
+C:\Users\Irhad Mrndzic\Desktop\IM_IMDB\IMDB_IM\IMDB_IM.Model\obj\Debug\netcoreapp3.1\IMDB_IM.Model.dll
+C:\Users\Irhad Mrndzic\Desktop\IM_IMDB\IMDB_IM\IMDB_IM.Model\obj\Debug\netcoreapp3.1\IMDB_IM.Model.pdb
+C:\Users\Irhad Mrndzic\Desktop\IM_IMDB\IMDB_IM\IMDB_IM.Model\bin\Debug\netcoreapp3.1\IMDB_IM.Model.runtimeconfig.json
+C:\Users\Irhad Mrndzic\Desktop\IM_IMDB\IMDB_IM\IMDB_IM.Model\bin\Debug\netcoreapp3.1\IMDB_IM.Model.runtimeconfig.dev.json
+C:\Users\Irhad Mrndzic\Desktop\IM_IMDB\IMDB_IM\IMDB_IM.Model\obj\Debug\netcoreapp3.1\IMDB_IM.Model.genruntimeconfig.cache
