@@ -156,11 +156,16 @@ namespace IMDB_IM.API.Services
             {
                 list = tempMoviesList;
             }
+
             if(list.Count==0 || list == null)
             {
                 list = null;
             }
 
+            if (string.IsNullOrEmpty(request.Search))
+            {
+                list = entity.ToList();
+            }
             var castedList = _mapper.Map<List<MoviesModel>>(list);
 
             var pagedList = PagedList<MoviesModel>.ToPagedList(castedList, request.PageNumber, request.PageSize);

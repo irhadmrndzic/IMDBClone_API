@@ -215,7 +215,7 @@ namespace IMDB_IM.API.Database
 
             Movie goodfellas = new Movie
             {
-                Title = "GoodFellas Morgan",
+                Title = "GoodFellas",
                 Description = "The story of Henry Hill and his life in the mob, covering his relationship with his wife Karen Hill and his mob partners Jimmy Conway and Tommy DeVito in the Italian-American crime syndicate.",
                 Type = (int)MoviesShowsType.Movies,
                 ReleaseDate = Convert.ToDateTime("1/1/1990"),
