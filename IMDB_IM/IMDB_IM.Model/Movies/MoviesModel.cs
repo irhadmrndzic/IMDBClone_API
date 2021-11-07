@@ -1,5 +1,6 @@
-﻿using System;
-
+﻿using IMDB_IM.Model.Actors;
+using System;
+using System.Collections.Generic;
 
 namespace IMDB_IM.Model.Movies
 {
@@ -13,6 +14,7 @@ namespace IMDB_IM.Model.Movies
         public decimal? AvgRating { get; set; }
         public int Type { get; set; }
 
+        public List<string> Actors { get; set; }
 
     }
 }

@@ -11,6 +11,7 @@ namespace IMDB_IM.API.Mappers
         {
             CreateMap<Database.Movie, MoviesModel>()
                 .ForMember(q=>q.AvgRating, src=>src.MapFrom(a=>a.Ratings.Average(x=>x.RatingN)))
+                .ForMember(q=>q.Actors,src=>src.MapFrom(a=> a.MoviesActors.Select(f=>f.FkActor.FirstName +" "+f.FkActor.LastName)))
                 .ReverseMap();
 
 

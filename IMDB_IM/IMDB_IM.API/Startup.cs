@@ -58,8 +58,7 @@ namespace IMDB_IM.API
             app.UseCors(x => x
                      .AllowAnyOrigin()
                      .AllowAnyMethod()
-                     .AllowAnyHeader());
-
+                     .AllowAnyHeader().WithExposedHeaders("X-Pagination"));
             app.UseHttpsRedirection();
 
             app.UseRouting();

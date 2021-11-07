@@ -31,7 +31,7 @@ namespace IMDB_IM.API.Controllers
 
             Response.Headers.Add("X-Pagination", JsonConvert.SerializeObject(metadata));
 
-            return Ok(_moviesService.Get(request));
+            return Ok(res);
         }
     }
 }

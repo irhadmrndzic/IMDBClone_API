@@ -36,7 +36,7 @@ namespace IMDB_IM.API.Database
             {
                 return;
             }
-            
+
 
 
             Movie theShawShankRedemption = new Movie
@@ -45,10 +45,10 @@ namespace IMDB_IM.API.Database
                 Description = "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
                 Type = (int)MoviesShowsType.Movies,
                 ReleaseDate = Convert.ToDateTime("1/1/1994"),
-                CoverImage =ReadFile("./Resources/movies/shawshankRedemption.jpg")
+                CoverImage = ReadFile("./Resources/movies/shawshankRedemption.jpg")
             };
             context.Movies.Add(theShawShankRedemption);
-            
+
             Movie theGodfather = new Movie
             {
                 Title = "The Godfather",
@@ -215,7 +215,7 @@ namespace IMDB_IM.API.Database
 
             Movie goodfellas = new Movie
             {
-                Title = "GoodFellas",
+                Title = "GoodFellas Morgan",
                 Description = "The story of Henry Hill and his life in the mob, covering his relationship with his wife Karen Hill and his mob partners Jimmy Conway and Tommy DeVito in the Italian-American crime syndicate.",
                 Type = (int)MoviesShowsType.Movies,
                 ReleaseDate = Convert.ToDateTime("1/1/1990"),
@@ -389,100 +389,100 @@ namespace IMDB_IM.API.Database
             context.SaveChanges();
 
 
-            Rating shawshank10 = new Rating { RatingN = 10, FkMovie = theShawShankRedemption };
+            Rating shawshank10 = new Rating { RatingN = 5, FkMovie = theShawShankRedemption };
             context.Ratings.Add(shawshank10);
 
-            Rating godFather10 = new Rating { RatingN = 10, FkMovie = theGodfather };
+            Rating godFather10 = new Rating { RatingN = 5, FkMovie = theGodfather };
             context.Ratings.Add(godFather10);
 
-            Rating godFather9 = new Rating { RatingN = 9, FkMovie = theGodfather };
+            Rating godFather9 = new Rating { RatingN = 4, FkMovie = theGodfather };
             context.Ratings.Add(godFather9);
 
-            Rating darkK = new Rating { RatingN = 9, FkMovie = darkKnight };
+            Rating darkK = new Rating { RatingN = 2, FkMovie = darkKnight };
             context.Ratings.Add(darkK);
 
-            Rating godFatherII = new Rating { RatingN = 9, FkMovie = theGodFatherII };
+            Rating godFatherII = new Rating { RatingN = 3, FkMovie = theGodFatherII };
             context.Ratings.Add(godFatherII);
 
 
-            Rating angryMen = new Rating { RatingN = 9, FkMovie = twelveAngryMen };
+            Rating angryMen = new Rating { RatingN = 5, FkMovie = twelveAngryMen };
             context.Ratings.Add(angryMen);
 
-            Rating lotrK10 = new Rating { RatingN = 10, FkMovie = lotrReturnOfTheKing };
+            Rating lotrK10 = new Rating { RatingN = 2, FkMovie = lotrReturnOfTheKing };
             context.Ratings.Add(lotrK10);
 
-            Rating lotrK10ii = new Rating { RatingN = 10, FkMovie = lotrReturnOfTheKing };
+            Rating lotrK10ii = new Rating { RatingN = 3, FkMovie = lotrReturnOfTheKing };
             context.Ratings.Add(lotrK10ii);
 
 
-            Rating lotrK9 = new Rating { RatingN = 9, FkMovie = lotrReturnOfTheKing };
+            Rating lotrK9 = new Rating { RatingN = 5, FkMovie = lotrReturnOfTheKing };
             context.Ratings.Add(lotrK9);
 
-            Rating lotr8 = new Rating { RatingN = 8, FkMovie = lotrReturnOfTheKing };
+            Rating lotr8 = new Rating { RatingN = 4, FkMovie = lotrReturnOfTheKing };
             context.Ratings.Add(lotr8);
 
-            Rating pulp10 = new Rating { RatingN = 10, FkMovie = pulpFiction };
+            Rating pulp10 = new Rating { RatingN = 3, FkMovie = pulpFiction };
             context.Ratings.Add(pulp10);
 
-            Rating pulp10ii = new Rating { RatingN = 10, FkMovie = pulpFiction };
+            Rating pulp10ii = new Rating { RatingN = 1, FkMovie = pulpFiction };
             context.Ratings.Add(pulp10ii);
 
 
-            Rating pulpK9 = new Rating { RatingN = 9, FkMovie = pulpFiction };
+            Rating pulpK9 = new Rating { RatingN = 4, FkMovie = pulpFiction };
             context.Ratings.Add(pulpK9);
 
-            Rating pulp8 = new Rating { RatingN = 8, FkMovie = pulpFiction };
+            Rating pulp8 = new Rating { RatingN = 5, FkMovie = pulpFiction };
             context.Ratings.Add(pulp8);
 
-            Rating sList10 = new Rating { RatingN = 10, FkMovie = schindlersList };
+            Rating sList10 = new Rating { RatingN = 2, FkMovie = schindlersList };
             context.Ratings.Add(sList10);
 
-            Rating sList8ii = new Rating { RatingN = 8, FkMovie = schindlersList };
+            Rating sList8ii = new Rating { RatingN = 3, FkMovie = schindlersList };
             context.Ratings.Add(sList8ii);
 
-            Rating sList9ii = new Rating { RatingN = 9, FkMovie = schindlersList };
+            Rating sList9ii = new Rating { RatingN = 4, FkMovie = schindlersList };
             context.Ratings.Add(sList9ii);
 
-            Rating sList8 = new Rating { RatingN = 8, FkMovie = schindlersList };
+            Rating sList8 = new Rating { RatingN = 1, FkMovie = schindlersList };
             context.Ratings.Add(sList8);
 
-            Rating inception10 = new Rating { RatingN = 10, FkMovie = Inception };
+            Rating inception10 = new Rating { RatingN = 1, FkMovie = Inception };
             context.Ratings.Add(inception10);
 
-            Rating inception9 = new Rating { RatingN = 9, FkMovie = Inception };
+            Rating inception9 = new Rating { RatingN = 2, FkMovie = Inception };
             context.Ratings.Add(inception9);
 
-            Rating inception8 = new Rating { RatingN = 8, FkMovie = Inception };
+            Rating inception8 = new Rating { RatingN = 4, FkMovie = Inception };
             context.Ratings.Add(inception8);
 
-            Rating inception7 = new Rating { RatingN = 7, FkMovie = Inception };
+            Rating inception7 = new Rating { RatingN = 2, FkMovie = Inception };
             context.Ratings.Add(inception7);
 
-            Rating fc = new Rating { RatingN = 7, FkMovie = fightClub };
+            Rating fc = new Rating { RatingN = 3, FkMovie = fightClub };
             context.Ratings.Add(fc);
 
-            Rating lotrFR = new Rating { RatingN = 7, FkMovie = lotrFellowshipOfTheRing };
+            Rating lotrFR = new Rating { RatingN = 2, FkMovie = lotrFellowshipOfTheRing };
             context.Ratings.Add(lotrFR);
 
-            Rating fg = new Rating { RatingN = 7, FkMovie = forrestGFump };
+            Rating fg = new Rating { RatingN = 4, FkMovie = forrestGFump };
             context.Ratings.Add(fg);
 
-            Rating gbu = new Rating { RatingN = 6, FkMovie = goodBadUgly };
+            Rating gbu = new Rating { RatingN = 5, FkMovie = goodBadUgly };
             context.Ratings.Add(gbu);
 
-            Rating lotrTT = new Rating { RatingN = 6, FkMovie = lotrTwoTowers };
+            Rating lotrTT = new Rating { RatingN = 4, FkMovie = lotrTwoTowers };
             context.Ratings.Add(lotrTT);
 
-            Rating matrix = new Rating { RatingN = 6, FkMovie = theMatrix };
+            Rating matrix = new Rating { RatingN = 1, FkMovie = theMatrix };
             context.Ratings.Add(matrix);
 
-            Rating gf = new Rating { RatingN = 5, FkMovie = goodfellas };
+            Rating gf = new Rating { RatingN = 2, FkMovie = goodfellas };
             context.Ratings.Add(gf);
 
-            Rating sv5 = new Rating { RatingN = 5, FkMovie = starwarsV };
+            Rating sv5 = new Rating { RatingN = 4, FkMovie = starwarsV };
             context.Ratings.Add(sv5);
 
-            Rating ofoc = new Rating { RatingN = 5, FkMovie = oneFlewOver };
+            Rating ofoc = new Rating { RatingN = 4, FkMovie = oneFlewOver };
             context.Ratings.Add(ofoc);
 
             Rating paras = new Rating { RatingN = 4, FkMovie = parasite };
@@ -520,6 +520,1068 @@ namespace IMDB_IM.API.Database
 
             Rating sm = new Rating { RatingN = 1, FkMovie = shichinin };
             context.Ratings.Add(sm);
+
+
+
+
+
+
+            Movie breakingBad = new Movie
+            {
+                Title = "Breaking Bad",
+                Description = "A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family's future.",
+                Type = (int)MoviesShowsType.Shows,
+                ReleaseDate = Convert.ToDateTime("1/1/2008"),
+                CoverImage = ReadFile("./Resources/shows/breakingbad.jpg")
+            };
+
+            context.Movies.Add(breakingBad);
+
+            Movie got = new Movie
+            {
+                Title = "Game Of Thrones",
+                Description = "Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns after being dormant for millennia.",
+                Type = (int)MoviesShowsType.Shows,
+                ReleaseDate = Convert.ToDateTime("1/1/2011"),
+                CoverImage = ReadFile("./Resources/shows/got.jpg")
+            };
+
+            context.Movies.Add(got);
+
+            Movie mandalorian = new Movie
+            {
+                Title = "The Mandalorian",
+                Description = "The travels of a lone bounty hunter in the outer reaches of the galaxy, far from the authority of the New Republic.",
+                Type = (int)MoviesShowsType.Shows,
+                ReleaseDate = Convert.ToDateTime("1/1/2019"),
+                CoverImage = ReadFile("./Resources/shows/mandalorian.jpg")
+            };
+
+            context.Movies.Add(mandalorian);
+
+            Movie friends = new Movie
+            {
+                Title = "Friends",
+                Description = "Follows the personal and professional lives of six twenty to thirty-something-year-old friends living in Manhattan.",
+                Type = (int)MoviesShowsType.Shows,
+                ReleaseDate = Convert.ToDateTime("1/1/1994"),
+                CoverImage = ReadFile("./Resources/shows/friends.jpg")
+            };
+
+            context.Movies.Add(friends);
+
+            Movie sopranos = new Movie
+            {
+                Title = "The Sopranos",
+                Description = "New Jersey mob boss Tony Soprano deals with personal and professional issues in his home and business life that affect his mental state, leading him to seek professional psychiatric counseling.",
+                Type = (int)MoviesShowsType.Shows,
+                ReleaseDate = Convert.ToDateTime("1/1/1999"),
+                CoverImage = ReadFile("./Resources/shows/sopranos.jpg")
+            };
+
+            context.Movies.Add(sopranos);
+
+            Movie wonderYears = new Movie
+            {
+                Title = "The Wonder Years",
+                Description = "Kevin Arnold recalls growing up during the late 60s and early 70s; the turbulent social times make the transition from child to adult unusually interesting.",
+                Type = (int)MoviesShowsType.Shows,
+                ReleaseDate = Convert.ToDateTime("1/1/1988"),
+                CoverImage = ReadFile("./Resources/shows/wonderYears.jpg")
+            };
+
+            context.Movies.Add(wonderYears);
+
+
+            Movie seinfeld = new Movie
+            {
+                Title = "Seinfeld",
+                Description = "The continuing misadventures of neurotic New York City stand-up comedian Jerry Seinfeld and his equally neurotic New York City friends.",
+                Type = (int)MoviesShowsType.Shows,
+                ReleaseDate = Convert.ToDateTime("1/1/1989"),
+                CoverImage = ReadFile("./Resources/shows/seinfeld.jpg")
+            };
+
+            context.Movies.Add(seinfeld);
+
+            Movie houseOfCards = new Movie
+            {
+                Title = "House of Cards",
+                Description = "A Congressman works with his equally conniving wife to exact revenge on the people who betrayed him.",
+                Type = (int)MoviesShowsType.Shows,
+                ReleaseDate = Convert.ToDateTime("1/1/2013"),
+                CoverImage = ReadFile("./Resources/shows/houseOfCards.jpg")
+            };
+
+            context.Movies.Add(houseOfCards);
+
+            Movie lost = new Movie
+            {
+                Title = "Breaking bad",
+                Description = "The survivors of a plane crash are forced to work together in order to survive on a seemingly deserted tropical island.",
+                Type = (int)MoviesShowsType.Shows,
+                ReleaseDate = Convert.ToDateTime("1/1/2004"),
+                CoverImage = ReadFile("./Resources/shows/lost.jpg")
+            };
+
+            context.Movies.Add(lost);
+
+            Movie westworld = new Movie
+            {
+                Title = "Westworld",
+                Description = "A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family's future.",
+                Type = (int)MoviesShowsType.Shows,
+                ReleaseDate = Convert.ToDateTime("1/1/2016"),
+                CoverImage = ReadFile("./Resources/shows/westworld.jpg")
+            };
+
+            context.Movies.Add(westworld);
+
+            Movie strangerThings = new Movie
+            {
+                Title = "Stranger Things",
+                Description = "When a young boy disappears, his mother, a police chief and his friends must confront terrifying supernatural forces in order to get him back.",
+                Type = (int)MoviesShowsType.Shows,
+                ReleaseDate = Convert.ToDateTime("1/1/2016"),
+                CoverImage = ReadFile("./Resources/shows/strangerthinfs.jpg")
+            };
+
+            context.Movies.Add(strangerThings);
+
+            Movie xFiles = new Movie
+            {
+                Title = "The X Files",
+                Description = "Two F.B.I. Agents, Fox Mulder the believer and Dana Scully the skeptic, investigate the strange and unexplained, while hidden forces work to impede their efforts.",
+                Type = (int)MoviesShowsType.Shows,
+                ReleaseDate = Convert.ToDateTime("1/1/1993"),
+                CoverImage = ReadFile("./Resources/shows/xfiles.jpg")
+            };
+
+            context.Movies.Add(xFiles);
+
+            Movie chernobyl = new Movie
+            {
+                Title = "Chernobyl",
+                Description = "In April 1986, an explosion at the Chernobyl nuclear power plant in the Union of Soviet Socialist Republics becomes one of the world's worst man-made catastrophes.",
+                Type = (int)MoviesShowsType.Shows,
+                ReleaseDate = Convert.ToDateTime("1/1/2019"),
+                CoverImage = ReadFile("./Resources/shows/chernobzl.jpg")
+            };
+
+            context.Movies.Add(chernobyl);
+
+            Movie saul = new Movie
+            {
+                Title = "Better Call Saul",
+                Description = "The trials and tribulations of criminal lawyer Jimmy McGill in the time before he established his strip-mall law office in Albuquerque, New Mexico.",
+                Type = (int)MoviesShowsType.Shows,
+                ReleaseDate = Convert.ToDateTime("1/1/2015"),
+                CoverImage = ReadFile("./Resources/shows/betterCallSaul.jpg")
+            };
+
+            context.Movies.Add(saul);
+
+            Movie narcos = new Movie
+            {
+                Title = "Narcos",
+                Description = "A chronicled look at the criminal exploits of Colombian drug lord Pablo Escobar, as well as the many other drug kingpins who plagued the country through the years.",
+                Type = (int)MoviesShowsType.Shows,
+                ReleaseDate = Convert.ToDateTime("1/1/2015"),
+                CoverImage = ReadFile("./Resources/shows/narcos.jpg")
+            };
+
+            context.Movies.Add(narcos);
+
+            Movie familyGuy = new Movie
+            {
+                Title = "Family Guy",
+                Description = "In a wacky Rhode Island town, a dysfunctional family strive to cope with everyday life as they are thrown from one crazy scenario to another.",
+                Type = (int)MoviesShowsType.Shows,
+                ReleaseDate = Convert.ToDateTime("1/1/1999"),
+                CoverImage = ReadFile("./Resources/shows/familyGuy.jpg")
+            };
+
+            context.Movies.Add(familyGuy);
+
+            Movie par = new Movie
+            {
+                Title = "Parks and Recreation ",
+                Description = "The absurd antics of an Indiana town's public officials as they pursue sundry projects to make their city a better place.",
+                Type = (int)MoviesShowsType.Shows,
+                ReleaseDate = Convert.ToDateTime("1/1/2009"),
+                CoverImage = ReadFile("./Resources/shows/par.jpg")
+            };
+
+            context.Movies.Add(par);
+
+            Movie simpsons = new Movie
+            {
+                Title = "The Simpsons",
+                Description = "The satiric adventures of a working-class family in the misfit city of Springfield.",
+                Type = (int)MoviesShowsType.Shows,
+                ReleaseDate = Convert.ToDateTime("1/1/1989"),
+                CoverImage = ReadFile("./Resources/shows/simpsons.jpg")
+            };
+            context.Movies.Add(simpsons);
+
+
+            Movie wire = new Movie
+            {
+                Title = "The Wire",
+                Description = "The Baltimore drug scene, as seen through the eyes of drug dealers and law enforcement.",
+                Type = (int)MoviesShowsType.Shows,
+                ReleaseDate = Convert.ToDateTime("1/1/2002"),
+                CoverImage = ReadFile("./Resources/shows/theWire.jpg")
+            };
+
+            context.Movies.Add(wire);
+
+            Movie rome = new Movie
+            {
+                Title = "The Rome",
+                Description = "A down-to-earth account of the lives of both illustrious and ordinary Romans set in the last days of the Roman Republic.",
+                Type = (int)MoviesShowsType.Shows,
+                ReleaseDate = Convert.ToDateTime("1/1/2005"),
+                CoverImage = ReadFile("./Resources/shows/rome.jpg")
+            };
+            context.Movies.Add(rome);
+
+            Movie ram = new Movie
+            {
+                Title = "Rick And Morty",
+                Description = "An animated series that follows the exploits of a super scientist and his not-so-bright grandson.",
+                Type = (int)MoviesShowsType.Shows,
+                ReleaseDate = Convert.ToDateTime("1/1/2013"),
+                CoverImage = ReadFile("./Resources/shows/rickAndMorty.jpg")
+            };
+            context.Movies.Add(ram);
+
+            Movie homeland = new Movie
+            {
+                Title = "Homeland",
+                Description = "A bipolar CIA operative becomes convinced a prisoner of war has been turned by al-Qaeda and is planning to carry out a terrorist attack on American soil.",
+                Type = (int)MoviesShowsType.Shows,
+                ReleaseDate = Convert.ToDateTime("1/1/2011"),
+                CoverImage = ReadFile("./Resources/shows/homeland.jpg")
+            };
+            context.Movies.Add(homeland);
+
+            Movie bob = new Movie
+            {
+                Title = "Band of Brothers",
+                Description = "The story of Easy Company of the U.S. Army 101st Airborne Division and their mission in World War II Europe, from Operation Overlord to V-J Day.",
+                Type = (int)MoviesShowsType.Shows,
+                ReleaseDate = Convert.ToDateTime("1/1/2001"),
+                CoverImage = ReadFile("./Resources/shows/bandOfBrothers.jpg")
+            };
+            context.Movies.Add(bob);
+
+            Movie vikings = new Movie
+            {
+                Title = "Vikings",
+                Description = "Vikings transports us to the brutal and mysterious world of Ragnar Lothbrok, a Viking warrior and farmer who yearns to explore - and raid - the distant shores across the ocean.",
+                Type = (int)MoviesShowsType.Shows,
+                ReleaseDate = Convert.ToDateTime("1/1/2013"),
+                CoverImage = ReadFile("./Resources/shows/vikings.jpg")
+            };
+            context.Movies.Add(vikings);
+
+            Movie boys = new Movie
+            {
+                Title = "The Boys",
+                Description = "A group of vigilantes set out to take down corrupt superheroes who abuse their superpowers.",
+                Type = (int)MoviesShowsType.Shows,
+                ReleaseDate = Convert.ToDateTime("1/1/2019"),
+                CoverImage = ReadFile("./Resources/shows/theBoys.jpg")
+            };
+            context.Movies.Add(boys);
+
+
+            Movie gp = new Movie
+            {
+                Title = "The Good Place",
+                Description = "Four people and their otherworldly frienemy struggle in the afterlife to define what it means to be good.",
+                Type = (int)MoviesShowsType.Shows,
+                ReleaseDate = Convert.ToDateTime("1/1/2016"),
+                CoverImage = ReadFile("./Resources/shows/goodPlace.jpg")
+            };
+            context.Movies.Add(gp);
+
+
+            Movie twentyFour = new Movie
+            {
+                Title = "24",
+                Description = "Jack Bauer races against the clock to subvert terrorist plots and save his nation from ultimate disaste",
+                Type = (int)MoviesShowsType.Shows,
+                ReleaseDate = Convert.ToDateTime("1/1/2001"),
+                CoverImage = ReadFile("./Resources/shows/twentyFour.jpg")
+            };
+            context.Movies.Add(twentyFour);
+
+
+            Movie twoAndHalfMen = new Movie
+            {
+                Title = "Two and a Half Men",
+                Description = "A hedonistic jingle writer's free-wheeling life comes to an abrupt halt when his brother and 10-year-old nephew move into his beach-front house.",
+                Type = (int)MoviesShowsType.Shows,
+                ReleaseDate = Convert.ToDateTime("1/1/2003"),
+                CoverImage = ReadFile("./Resources/shows/twoAndHalfMen.jpg")
+            };
+            context.Movies.Add(twoAndHalfMen);
+
+
+            Movie xMen = new Movie
+            {
+                Title = "X-Men",
+                Description = "A team of mutant superheroes fight for justice and human acceptance in the Marvel Comics universe.",
+                Type = (int)MoviesShowsType.Shows,
+                ReleaseDate = Convert.ToDateTime("1/1/1992"),
+                CoverImage = ReadFile("./Resources/shows/xMen.jpg")
+            };
+            context.Movies.Add(xMen);
+
+            Movie legion = new Movie
+            {
+                Title = "Legion",
+                Description = "David Haller is a troubled young man diagnosed as schizophrenic, but after a strange encounter, he discovers special powers that will change his life forever.",
+                Type = (int)MoviesShowsType.Shows,
+                ReleaseDate = Convert.ToDateTime("1/1/2017"),
+                CoverImage = ReadFile("./Resources/shows/legion.jpg")
+            };
+            context.Movies.Add(legion);
+
+            context.SaveChanges();
+
+            Rating bb = new Rating { RatingN = 5, FkMovie = breakingBad };
+            context.Ratings.Add(bb);
+
+            Rating gt = new Rating { RatingN = 5, FkMovie = got };
+            context.Ratings.Add(gt);
+
+            Rating ml = new Rating { RatingN = 4, FkMovie = mandalorian };
+            context.Ratings.Add(ml);
+
+            Rating fr = new Rating { RatingN = 2, FkMovie = friends };
+            context.Ratings.Add(fr);
+
+            Rating fr2 = new Rating { RatingN = 4, FkMovie = friends };
+            context.Ratings.Add(fr2);
+
+            Rating wy = new Rating { RatingN = 5, FkMovie = wonderYears };
+            context.Ratings.Add(wy);
+
+            Rating sf = new Rating { RatingN = 2, FkMovie = seinfeld };
+            context.Ratings.Add(sf);
+
+            Rating hc = new Rating { RatingN = 3, FkMovie = houseOfCards };
+            context.Ratings.Add(hc);
+
+            Rating lt = new Rating { RatingN = 5, FkMovie = lost };
+            context.Ratings.Add(lt);
+
+            Rating ww = new Rating { RatingN = 4, FkMovie = westworld };
+            context.Ratings.Add(ww);
+
+            Rating sth = new Rating { RatingN = 3, FkMovie = strangerThings };
+            context.Ratings.Add(sth);
+
+            Rating xf = new Rating { RatingN = 1, FkMovie = xFiles };
+            context.Ratings.Add(xf);
+
+            Rating cb = new Rating { RatingN = 4, FkMovie = chernobyl };
+            context.Ratings.Add(cb);
+
+            Rating bcs = new Rating { RatingN = 5, FkMovie = saul };
+            context.Ratings.Add(bcs);
+
+            Rating nrcs = new Rating { RatingN = 2, FkMovie = narcos };
+            context.Ratings.Add(nrcs);
+
+            Rating fag = new Rating { RatingN = 3, FkMovie = familyGuy };
+            context.Ratings.Add(fag);
+
+            Rating parc = new Rating { RatingN = 4, FkMovie = par };
+            context.Ratings.Add(parc);
+
+            Rating smp = new Rating { RatingN = 1, FkMovie = simpsons };
+            context.Ratings.Add(smp);
+
+            Rating wr = new Rating { RatingN = 1, FkMovie = wire };
+            context.Ratings.Add(wr);
+
+            Rating rm = new Rating { RatingN = 2, FkMovie = rome };
+            context.Ratings.Add(rm);
+
+            Rating ramo = new Rating { RatingN = 4, FkMovie = ram };
+            context.Ratings.Add(ramo);
+
+            Rating hl = new Rating { RatingN = 2, FkMovie = homeland };
+            context.Ratings.Add(hl);
+
+            Rating ban = new Rating { RatingN = 3, FkMovie = bob };
+            context.Ratings.Add(ban);
+
+            Rating vk = new Rating { RatingN = 2, FkMovie = vikings };
+            context.Ratings.Add(vk);
+
+            Rating bys = new Rating { RatingN = 4, FkMovie = boys };
+            context.Ratings.Add(bys);
+
+            Rating gpl = new Rating { RatingN = 5, FkMovie = gp };
+            context.Ratings.Add(gpl);
+
+            Rating tw = new Rating { RatingN = 4, FkMovie = twentyFour };
+            context.Ratings.Add(tw);
+
+            Rating twa = new Rating { RatingN = 1, FkMovie = twoAndHalfMen };
+            context.Ratings.Add(twa);
+
+            Rating xm = new Rating { RatingN = 2, FkMovie = xMen };
+            context.Ratings.Add(xm);
+
+            Rating lg = new Rating { RatingN = 4, FkMovie = legion };
+            context.Ratings.Add(lg);
+
+            context.SaveChanges();
+
+            Actor robertoBenigni = new Actor
+            {
+                FirstName = "Roberto",
+                LastName = "Benigni"
+            };
+            context.Actors.Add(robertoBenigni);
+
+            Actor kevinSpacey = new Actor
+            {
+                FirstName = "Kevin",
+                LastName = "Spacey"
+            };
+            context.Actors.Add(kevinSpacey);
+
+            Actor jodieFoster = new Actor
+            {
+                FirstName = "Jodie",
+                LastName = "Foster"
+            };
+            context.Actors.Add(jodieFoster);
+
+            Actor anthonyHopkins = new Actor
+            {
+                FirstName = "Anthony",
+                LastName = "Hopkins"
+            };
+            context.Actors.Add(anthonyHopkins);
+
+            Actor markHamill = new Actor
+            {
+                FirstName = "Mark",
+                LastName = "Hamill"
+            };
+            context.Actors.Add(markHamill);
+
+            Actor tomHanks = new Actor
+            {
+                FirstName = "Tom",
+                LastName = "Hanks"
+            };
+            context.Actors.Add(tomHanks);
+
+            Actor morganFreeman = new Actor
+            {
+                FirstName = "Morgan",
+                LastName = "Freeman"
+            };
+            context.Actors.Add(morganFreeman);
+
+            Actor bobGunton = new Actor
+            {
+                FirstName = "Bob",
+                LastName = "Gunton"
+            };
+            context.Actors.Add(bobGunton);
+
+  
+
+            Actor marlonBrando = new Actor
+            {
+                FirstName = "Marlon",
+                LastName = "Brando"
+            };
+            context.Actors.Add(marlonBrando);
+
+            Actor alPacino = new Actor
+            {
+                FirstName = "Al",
+                LastName = "Pacino"
+            };
+            context.Actors.Add(alPacino);
+
+
+
+
+            Actor cbale = new Actor
+            {
+                FirstName = "Christian",
+                LastName = "Bale"
+            };
+            context.Actors.Add(cbale);
+
+            Actor heathLeadger = new Actor
+            {
+                FirstName = "Heath",
+                LastName = "Ledger"
+            };
+            context.Actors.Add(heathLeadger);
+
+
+
+
+            Actor deniro = new Actor
+            {
+                FirstName = "Robert",
+                LastName = "De Niro"
+            };
+            context.Actors.Add(deniro);
+
+
+
+            Actor henryFonda = new Actor
+            {
+                FirstName = "Henry",
+                LastName = "Fonda"
+            };
+            context.Actors.Add(henryFonda);
+
+            Actor martinBalsam = new Actor
+            {
+                FirstName = "Martin",
+                LastName = "Balsam"
+            };
+            context.Actors.Add(martinBalsam);
+
+
+
+            Actor elijahWood = new Actor
+            {
+                FirstName = "Elijah",
+                LastName = "Wood"
+            };
+            context.Actors.Add(elijahWood);
+
+            Actor viggoMortessen = new Actor
+            {
+                FirstName = "Viggo",
+                LastName = "Mortessen"
+            };
+            context.Actors.Add(viggoMortessen);
+
+
+
+            Actor travolta = new Actor
+            {
+                FirstName = "John",
+                LastName = "Travolta"
+            };
+            context.Actors.Add(travolta);
+
+            Actor uma = new Actor
+            {
+                FirstName = "Uma",
+                LastName = "Thurman"
+            };
+            context.Actors.Add(uma);
+
+
+
+            Actor liamNesson = new Actor
+            {
+                FirstName = "Liam",
+                LastName = "Neeson"
+            };
+            context.Actors.Add(liamNesson);
+
+            Actor ralph = new Actor
+            {
+                FirstName = "Ralph",
+                LastName = "Fiennes"
+            };
+            context.Actors.Add(ralph);
+
+
+            Actor leonardoDiCaprio = new Actor
+            {
+                FirstName = "Leonardo",
+                LastName = "DiCaprio"
+            };
+            context.Actors.Add(leonardoDiCaprio);
+
+            Actor elliotPage = new Actor
+            {
+                FirstName = "Elliot",
+                LastName = "Page"
+            };
+            context.Actors.Add(leonardoDiCaprio);
+
+            Actor bradPitt = new Actor
+            {
+                FirstName = "Brad",
+                LastName = "Pitt"
+            };
+            context.Actors.Add(bradPitt);
+
+            Actor edwardNorton = new Actor
+            {
+                FirstName = "Edward",
+                LastName = "Norton"
+            };
+            context.Actors.Add(edwardNorton);
+
+            context.SaveChanges();
+
+            MoviesActor inceptionAc1 = new MoviesActor
+            {
+                FkMovie = Inception,
+                FkActor = leonardoDiCaprio
+            };
+            context.MoviesActors.Add(inceptionAc1);
+
+            MoviesActor inceptionAc2 = new MoviesActor
+            {
+                FkMovie = Inception,
+                FkActor = elliotPage
+            };
+            context.MoviesActors.Add(inceptionAc2);
+
+
+
+            MoviesActor lotrac1 = new MoviesActor
+            {
+                FkMovie = lotrReturnOfTheKing,
+                FkActor = elijahWood
+            };
+            context.MoviesActors.Add(lotrac1);
+
+            MoviesActor lotrac2 = new MoviesActor
+            {
+                FkMovie = lotrReturnOfTheKing,
+                FkActor = viggoMortessen
+            };
+            context.MoviesActors.Add(lotrac2);
+
+            MoviesActor fc1 = new MoviesActor
+            {
+                FkMovie = fightClub,
+                FkActor = edwardNorton
+            };
+            context.MoviesActors.Add(fc1);
+
+            MoviesActor fc2 = new MoviesActor
+            {
+                FkMovie = fightClub,
+                FkActor = bradPitt
+            };
+            context.MoviesActors.Add(fc2);
+
+
+            MoviesActor lotrf1 = new MoviesActor
+            {
+                FkMovie = lotrFellowshipOfTheRing,
+                FkActor = edwardNorton
+            };
+            context.MoviesActors.Add(lotrf1);
+
+            MoviesActor lotrf2 = new MoviesActor
+            {
+                FkMovie = lotrFellowshipOfTheRing,
+                FkActor = ralph
+            };
+            context.MoviesActors.Add(lotrf2);
+
+
+            MoviesActor sListaAc1 = new MoviesActor
+            {
+                FkMovie = schindlersList,
+                FkActor = liamNesson
+            };
+            context.MoviesActors.Add(sListaAc1);
+
+            MoviesActor sListAc2 = new MoviesActor
+            {
+                FkMovie = schindlersList,
+                FkActor = ralph
+            };
+            context.MoviesActors.Add(sListAc2);
+
+            MoviesActor gf1 = new MoviesActor
+            {
+                FkMovie = theGodfather,
+                FkActor = marlonBrando
+            };
+            context.MoviesActors.Add(gf1);
+
+            MoviesActor gf2 = new MoviesActor
+            {
+                FkMovie = theGodfather,
+                FkActor = alPacino
+            };
+            context.MoviesActors.Add(gf2);
+
+            MoviesActor dka = new MoviesActor
+            {
+                FkMovie = darkKnight,
+                FkActor = cbale
+            };
+            context.MoviesActors.Add(dka);
+
+            MoviesActor pf1 = new MoviesActor
+            {
+                FkMovie = pulpFiction,
+                FkActor = travolta
+            };
+            context.MoviesActors.Add(pf1);
+
+            MoviesActor pf2 = new MoviesActor
+            {
+                FkMovie = pulpFiction,
+                FkActor = uma
+            };
+            context.MoviesActors.Add(pf2);
+
+
+            MoviesActor dka2 = new MoviesActor
+            {
+                FkMovie = darkKnight,
+                FkActor = heathLeadger
+            };
+            context.MoviesActors.Add(dka2);
+
+            MoviesActor forrestAc1 = new MoviesActor
+            {
+                FkMovie = forrestGFump,
+                FkActor = alPacino
+            };
+            context.MoviesActors.Add(forrestAc1);
+
+            MoviesActor forrestAc2 = new MoviesActor
+            {
+                FkMovie = forrestGFump,
+                FkActor = cbale
+            };
+            context.MoviesActors.Add(forrestAc2);
+
+
+            MoviesActor gbac1 = new MoviesActor
+            {
+                FkMovie = goodBadUgly,
+                FkActor = viggoMortessen
+            };
+            context.MoviesActors.Add(gbac1);
+
+            MoviesActor gbac2 = new MoviesActor
+            {
+                FkMovie = goodBadUgly,
+                FkActor = elliotPage
+            };
+            context.MoviesActors.Add(gbac2);
+
+            MoviesActor am1 = new MoviesActor
+            {
+                FkMovie = twelveAngryMen,
+                FkActor = henryFonda
+            };
+            context.MoviesActors.Add(am1);
+
+            MoviesActor am2 = new MoviesActor
+            {
+                FkMovie = twelveAngryMen,
+                FkActor = martinBalsam
+            };
+            context.MoviesActors.Add(am2);
+
+
+            MoviesActor mtr1 = new MoviesActor
+            {
+                FkMovie = lotrTwoTowers,
+                FkActor = viggoMortessen
+            };
+            context.MoviesActors.Add(mtr1);
+
+            MoviesActor mtr2 = new MoviesActor
+            {
+                FkMovie = lotrTwoTowers,
+                FkActor = elijahWood
+            };
+            context.MoviesActors.Add(mtr2);
+
+
+            MoviesActor lottw1 = new MoviesActor
+            {
+                FkMovie = theMatrix,
+                FkActor = uma
+            };
+            context.MoviesActors.Add(lottw1);
+
+            MoviesActor lottw2 = new MoviesActor
+            {
+                FkMovie = theMatrix,
+                FkActor = uma
+            };
+            context.MoviesActors.Add(lottw2);
+
+
+            MoviesActor gfac1 = new MoviesActor
+            {
+                FkMovie = goodfellas,
+                FkActor = deniro
+            };
+            context.MoviesActors.Add(gfac1);
+
+            MoviesActor gfac2 = new MoviesActor
+            {
+                FkMovie = goodfellas,
+                FkActor = heathLeadger
+            };
+            context.MoviesActors.Add(gfac2);
+
+
+            MoviesActor swac1 = new MoviesActor
+            {
+                FkMovie = starWars,
+                FkActor = deniro
+            };
+            context.MoviesActors.Add(swac1);
+
+            MoviesActor swac2 = new MoviesActor
+            {
+                FkMovie = starWars,
+                FkActor = liamNesson
+            };
+            context.MoviesActors.Add(swac2);
+
+
+            MoviesActor ofAc1 = new MoviesActor
+            {
+                FkMovie = oneFlewOver,
+                FkActor = travolta
+            };
+            context.MoviesActors.Add(ofAc1);
+
+            MoviesActor ofAc2 = new MoviesActor
+            {
+                FkMovie = oneFlewOver,
+                FkActor = elijahWood
+            };
+            context.MoviesActors.Add(ofAc2);
+
+
+            MoviesActor parAc1 = new MoviesActor
+            {
+                FkMovie = parasite,
+                FkActor = edwardNorton
+            };
+            context.MoviesActors.Add(parAc1);
+
+            MoviesActor parAc2 = new MoviesActor
+            {
+                FkMovie = parasite,
+                FkActor = elijahWood
+            };
+            context.MoviesActors.Add(parAc2);
+
+
+            MoviesActor interstellarAc1 = new MoviesActor
+            {
+                FkMovie = interstellar,
+                FkActor = deniro
+            };
+            context.MoviesActors.Add(interstellarAc1);
+
+            MoviesActor interstellarAc2 = new MoviesActor
+            {
+                FkMovie = interstellar,
+                FkActor = alPacino
+            };
+            context.MoviesActors.Add(interstellarAc2);
+
+
+            MoviesActor cogAc1 = new MoviesActor
+            {
+                FkMovie = cityOfGod,
+                FkActor = cbale
+            };
+            context.MoviesActors.Add(cogAc1);
+
+            MoviesActor cogAc2 = new MoviesActor
+            {
+                FkMovie = cityOfGod,
+                FkActor = leonardoDiCaprio
+            };
+            context.MoviesActors.Add(cogAc2);
+
+
+            MoviesActor saAc1 = new MoviesActor
+            {
+                FkMovie = spiritedAway,
+                FkActor = elijahWood
+            };
+            context.MoviesActors.Add(saAc1);
+
+            MoviesActor saAc2 = new MoviesActor
+            {
+                FkMovie = parasite,
+                FkActor = elliotPage
+            };
+            context.MoviesActors.Add(saAc2);
+
+
+            MoviesActor sprAc1 = new MoviesActor
+            {
+                FkMovie = savingPrivateRyan,
+                FkActor = leonardoDiCaprio
+            };
+            context.MoviesActors.Add(sprAc1);
+
+            MoviesActor sprAc2 = new MoviesActor
+            {
+                FkMovie = savingPrivateRyan,
+                FkActor = ralph
+            };
+            context.MoviesActors.Add(sprAc2);
+
+
+            MoviesActor gmAc1 = new MoviesActor
+            {
+                FkMovie = greenMile,
+                FkActor = uma
+            };
+            context.MoviesActors.Add(gmAc1);
+
+            MoviesActor gmAc2 = new MoviesActor
+            {
+                FkMovie = greenMile,
+                FkActor = bradPitt
+            };
+            context.MoviesActors.Add(gmAc2);
+
+
+            MoviesActor libAc1 = new MoviesActor
+            {
+                FkMovie = lifeIsBeautiful,
+                FkActor = tomHanks
+            };
+            context.MoviesActors.Add(libAc1);
+
+            MoviesActor libAc2 = new MoviesActor
+            {
+                FkMovie = lifeIsBeautiful,
+                FkActor = robertoBenigni
+            };
+            context.MoviesActors.Add(libAc2);
+
+
+            MoviesActor sevenAc1 = new MoviesActor
+            {
+                FkMovie = seven,
+                FkActor = morganFreeman
+            };
+            context.MoviesActors.Add(sevenAc1);
+
+            MoviesActor sevenAc2 = new MoviesActor
+            {
+                FkMovie = seven,
+                FkActor = bradPitt
+            };
+            context.MoviesActors.Add(sevenAc2);
+
+
+            MoviesActor silenceAc1 = new MoviesActor
+            {
+                FkMovie = silenceOfTheLambs,
+                FkActor = jodieFoster
+            };
+            context.MoviesActors.Add(silenceAc1);
+
+            MoviesActor silenceAc2 = new MoviesActor
+            {
+                FkMovie = silenceOfTheLambs,
+                FkActor = anthonyHopkins
+            };
+            context.MoviesActors.Add(silenceAc2);
+
+
+            MoviesActor sw2Ac1 = new MoviesActor
+            {
+                FkMovie = starwarsV,
+                FkActor = markHamill
+            };
+            context.MoviesActors.Add(sw2Ac1);
+
+            MoviesActor sw2Ac2 = new MoviesActor
+            {
+                FkMovie = silenceOfTheLambs,
+                FkActor = kevinSpacey
+            };
+            context.MoviesActors.Add(sw2Ac2);
+
+
+            MoviesActor seppukkuAc1 = new MoviesActor
+            {
+                FkMovie = seppuku,
+                FkActor = tomHanks
+            };
+            context.MoviesActors.Add(seppukkuAc1);
+
+            MoviesActor seppukkuAc2 = new MoviesActor
+            {
+                FkMovie = seppuku,
+                FkActor = kevinSpacey
+            };
+            context.MoviesActors.Add(seppukkuAc2);
+
+
+            MoviesActor samuraiAc1 = new MoviesActor
+            {
+                FkMovie = shichinin,
+                FkActor = leonardoDiCaprio
+            };
+            context.MoviesActors.Add(samuraiAc1);
+
+            MoviesActor samuraiAc2 = new MoviesActor
+            {
+                FkMovie = shichinin,
+                FkActor = ralph
+            };
+            context.MoviesActors.Add(samuraiAc2);
+
+            MoviesActor shawshankActor1 = new MoviesActor
+            {
+                FkMovie = theShawShankRedemption,
+                FkActor = morganFreeman
+            };
+            context.MoviesActors.Add(shawshankActor1);
+
+            MoviesActor shawshankAc2 = new MoviesActor
+            {
+                FkMovie = theShawShankRedemption,
+                FkActor = bobGunton
+            };
+            context.MoviesActors.Add(shawshankAc2);
+
+
+            MoviesActor goodFatherActorII = new MoviesActor
+            {
+                FkMovie = theGodFatherII,
+                FkActor = alPacino
+            };
+            context.MoviesActors.Add(goodFatherActorII);
+
+            MoviesActor goodFatherActorIIii = new MoviesActor
+            {
+                FkMovie = theGodFatherII,
+                FkActor = deniro
+            };
+            context.MoviesActors.Add(goodFatherActorIIii);
+
             context.SaveChanges();
 
         }
