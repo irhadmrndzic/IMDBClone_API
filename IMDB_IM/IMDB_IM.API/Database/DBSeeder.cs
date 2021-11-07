@@ -617,7 +617,7 @@ namespace IMDB_IM.API.Database
 
             Movie lost = new Movie
             {
-                Title = "Breaking bad",
+                Title = "Lost",
                 Description = "The survivors of a plane crash are forced to work together in order to survive on a seemingly deserted tropical island.",
                 Type = (int)MoviesShowsType.Shows,
                 ReleaseDate = Convert.ToDateTime("1/1/2004"),

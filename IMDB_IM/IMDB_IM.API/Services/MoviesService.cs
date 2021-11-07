@@ -108,7 +108,7 @@ namespace IMDB_IM.API.Services
 
                 if (!digitSearch)
                 {
-                    var searchTitleDescEntity = entity.Where(q => q.Title.ToLower().Contains(searchString) || q.Description.ToLower().Contains(searchString) && q.Type == request.Type);
+                    var searchTitleDescEntity = entity.Where(q => q.Title.ToLower().Contains(searchString) || q.Description.ToLower().Contains(searchString));
 
                     if (searchTitleDescEntity.Any())
                     {
