@@ -1136,6 +1136,33 @@ namespace IMDB_IM.API.Database
             };
             context.Actors.Add(edwardNorton);
 
+
+            Actor fredSavage = new Actor
+            {
+                FirstName = "Fred",
+                LastName = "Savage"
+            };
+            context.Actors.Add(fredSavage);
+
+
+
+            Actor evanRachel = new Actor
+            {
+                FirstName = "Evan",
+                LastName = "Rachel"
+            };
+            context.Actors.Add(evanRachel);
+
+
+
+            Actor pedroPascal = new Actor
+            {
+                FirstName = "Pedro",
+                LastName = "Pascal"
+            };
+            context.Actors.Add(pedroPascal);
+
+
             context.SaveChanges();
 
             MoviesActor inceptionAc1 = new MoviesActor
@@ -1582,7 +1609,488 @@ namespace IMDB_IM.API.Database
             };
             context.MoviesActors.Add(goodFatherActorIIii);
 
+
+
+            MoviesActor bbadAC1 = new MoviesActor
+            {
+                FkMovie = breakingBad,
+                FkActor = cbale
+            };
+            context.MoviesActors.Add(bbadAC1);
+
+
+            MoviesActor bbaC2 = new MoviesActor
+            {
+                FkMovie = breakingBad,
+                FkActor = deniro
+            };
+            context.MoviesActors.Add(bbaC2);
+
+
+            MoviesActor goAc1 = new MoviesActor
+            {
+                FkMovie = got,
+                FkActor = deniro
+            };
+            context.MoviesActors.Add(goAc1);
+
+            MoviesActor goac2 = new MoviesActor
+            {
+                FkMovie = got,
+                FkActor = marlonBrando
+            };
+            context.MoviesActors.Add(goac2);
+
+
+            MoviesActor mandalorianAC1 = new MoviesActor
+            {
+                FkMovie = mandalorian,
+                FkActor = leonardoDiCaprio
+            };
+            context.MoviesActors.Add(mandalorianAC1);
+
+
+            MoviesActor mandaloraianAc2 = new MoviesActor
+            {
+                FkMovie = mandalorian,
+                FkActor = tomHanks
+            };
+            context.MoviesActors.Add(mandaloraianAc2);
+
+            MoviesActor friendsAc1 = new MoviesActor
+            {
+                FkMovie = friends,
+                FkActor = uma
+            };
+            context.MoviesActors.Add(friendsAc1);
+
+
+            MoviesActor friednsAc2 = new MoviesActor
+            {
+                FkMovie = friends,
+                FkActor = elijahWood
+            };
+            context.MoviesActors.Add(friednsAc2);
+
+            MoviesActor sopranosAc1 = new MoviesActor
+            {
+                FkMovie = sopranos,
+                FkActor = bradPitt
+            };
+            context.MoviesActors.Add(sopranosAc1);
+
+
+            MoviesActor sopranosAc2 = new MoviesActor
+            {
+                FkMovie = sopranos,
+                FkActor = elliotPage
+            };
+            context.MoviesActors.Add(sopranosAc2);
+
+            MoviesActor wonderAc1 = new MoviesActor
+            {
+                FkMovie = wonderYears,
+                FkActor = heathLeadger
+            };
+            context.MoviesActors.Add(wonderAc1);
+
+
+            MoviesActor wonderAc2 = new MoviesActor
+            {
+                FkMovie = wonderYears,
+                FkActor = tomHanks
+            };
+            context.MoviesActors.Add(wonderAc2);
+
+            MoviesActor seinfeldAc1 = new MoviesActor
+            {
+                FkMovie = seinfeld,
+                FkActor = liamNesson
+            };
+            context.MoviesActors.Add(seinfeldAc1);
+
+
+            MoviesActor seinfeldAc2 = new MoviesActor
+            {
+                FkMovie = seinfeld,
+                FkActor = pedroPascal
+            };
+            context.MoviesActors.Add(seinfeldAc2);
+
+
+            MoviesActor hocAc1 = new MoviesActor
+            {
+                FkMovie = houseOfCards,
+                FkActor = fredSavage
+            };
+            context.MoviesActors.Add(hocAc1);
+
+
+            MoviesActor hocAc2 = new MoviesActor
+            {
+                FkMovie = houseOfCards,
+                FkActor = liamNesson
+            };
+            context.MoviesActors.Add(hocAc2);
+
+
+            MoviesActor lostAc1 = new MoviesActor
+            {
+                FkMovie = lost,
+                FkActor = heathLeadger
+            };
+            context.MoviesActors.Add(lostAc1);
+
+
+
+            MoviesActor lostAc2 = new MoviesActor
+            {
+                FkMovie = lost,
+                FkActor = travolta
+            };
+            context.MoviesActors.Add(lostAc2);
+
+
+
+            MoviesActor wwAc1 = new MoviesActor
+            {
+                FkMovie = westworld,
+                FkActor = bradPitt
+            };
+            context.MoviesActors.Add(wwAc1);
+
+
+            MoviesActor wwAc2 = new MoviesActor
+            {
+                FkMovie = westworld,
+                FkActor = leonardoDiCaprio
+            };
+            context.MoviesActors.Add(wwAc1);
+
+            MoviesActor stAc1 = new MoviesActor
+            {
+                FkMovie = strangerThings,
+                FkActor = robertoBenigni
+            };
+            context.MoviesActors.Add(stAc1);
+
+            MoviesActor stAc2 = new MoviesActor
+            {
+                FkMovie = strangerThings,
+                FkActor = marlonBrando
+            };
+            context.MoviesActors.Add(stAc2);
+
+
+            MoviesActor xfAc1 = new MoviesActor
+            {
+                FkMovie = xFiles,
+                FkActor = fredSavage
+            };
+            context.MoviesActors.Add(xfAc1);
+
+            MoviesActor xfAc2 = new MoviesActor
+            {
+                FkMovie = xFiles,
+                FkActor = robertoBenigni
+            };
+            context.MoviesActors.Add(xfAc2);
+
+
+
+            MoviesActor chAc1 = new MoviesActor
+            {
+                FkMovie = chernobyl,
+                FkActor = henryFonda
+            };
+            context.MoviesActors.Add(chAc1);
+
+
+            MoviesActor chAc2 = new MoviesActor
+            {
+                FkMovie = chernobyl,
+                FkActor = viggoMortessen
+            };
+            context.MoviesActors.Add(chAc2);
+
+
+
+            MoviesActor bcsAc1 = new MoviesActor
+            {
+                FkMovie = saul,
+                FkActor = liamNesson
+            };
+            context.MoviesActors.Add(bcsAc1);
+
+
+            MoviesActor bcsAc2 = new MoviesActor
+            {
+                FkMovie = saul,
+                FkActor = heathLeadger
+            };
+            context.MoviesActors.Add(bcsAc2);
+
+
+            MoviesActor narcosAC1 = new MoviesActor
+            {
+                FkMovie = narcos,
+                FkActor = pedroPascal
+            };
+            context.MoviesActors.Add(narcosAC1);
+
+
+            MoviesActor narcosAC2 = new MoviesActor
+            {
+                FkMovie = narcos,
+                FkActor = kevinSpacey
+            };
+            context.MoviesActors.Add(narcosAC2);
+
+
+            MoviesActor fgAc1 = new MoviesActor
+            {
+                FkMovie = familyGuy,
+                FkActor = ralph
+            };
+            context.MoviesActors.Add(fgAc1);
+
+
+            MoviesActor fgAc2 = new MoviesActor
+            {
+                FkMovie = familyGuy,
+                FkActor = marlonBrando
+            };
+            context.MoviesActors.Add(fgAc2);
+
+
+            MoviesActor parkAc1 = new MoviesActor
+            {
+                FkMovie = par,
+                FkActor = uma
+            };
+            context.MoviesActors.Add(parkAc1);
+
+
+            MoviesActor parkAc2 = new MoviesActor
+            {
+                FkMovie = par,
+                FkActor = jodieFoster
+            };
+            context.MoviesActors.Add(parkAc2);
+
+
+            MoviesActor simpsonsAc1 = new MoviesActor
+            {
+                FkMovie = simpsons,
+                FkActor = anthonyHopkins
+            };
+            context.MoviesActors.Add(simpsonsAc1);
+
+
+            MoviesActor simpsonsAc2 = new MoviesActor
+            {
+                FkMovie = par,
+                FkActor = travolta
+            };
+            context.MoviesActors.Add(simpsonsAc2);
+
+
+            MoviesActor wireAc1 = new MoviesActor
+            {
+                FkMovie = wire,
+                FkActor = tomHanks
+            };
+            context.MoviesActors.Add(wireAc1);
+
+
+            MoviesActor wireAc2 = new MoviesActor
+            {
+                FkMovie = wire,
+                FkActor = martinBalsam
+            };
+            context.MoviesActors.Add(wireAc2);
+
+
+            MoviesActor romaAc1 = new MoviesActor
+            {
+                FkMovie = rome,
+                FkActor = martinBalsam
+            };
+            context.MoviesActors.Add(romaAc1);
+
+
+            MoviesActor romaAc2 = new MoviesActor
+            {
+                FkMovie = rome,
+                FkActor = kevinSpacey
+            };
+            context.MoviesActors.Add(wireAc2);
+
+
+            MoviesActor rickAc1 = new MoviesActor
+            {
+                FkMovie = ram,
+                FkActor = bradPitt
+            };
+            context.MoviesActors.Add(rickAc1);
+
+
+            MoviesActor rickAc2 = new MoviesActor
+            {
+                FkMovie = ram,
+                FkActor = uma
+            };
+            context.MoviesActors.Add(rickAc2);
+
+
+
+            MoviesActor homelandAc1 = new MoviesActor
+            {
+                FkMovie = homeland,
+                FkActor = liamNesson
+            };
+            context.MoviesActors.Add(homelandAc1);
+
+            MoviesActor homelandAc2 = new MoviesActor
+            {
+                FkMovie = homeland,
+                FkActor = martinBalsam
+            };
+            context.MoviesActors.Add(homelandAc2);
+
+
             context.SaveChanges();
+
+
+            MoviesActor bobAc1 = new MoviesActor
+            {
+                FkMovie = bob,
+                FkActor = evanRachel
+            };
+            context.MoviesActors.Add(bobAc1);
+
+
+            MoviesActor bobAc2 = new MoviesActor
+            {
+                FkMovie = bob,
+                FkActor = elijahWood
+            };
+            context.MoviesActors.Add(bobAc2);
+
+
+            MoviesActor vikingsAc1 = new MoviesActor
+            {
+                FkMovie = vikings,
+                FkActor = elijahWood
+            };
+            context.MoviesActors.Add(vikingsAc1);
+
+            MoviesActor vikingsAc2 = new MoviesActor
+            {
+                FkMovie = vikings,
+                FkActor = evanRachel
+            };
+            context.MoviesActors.Add(vikingsAc2);
+
+
+
+            MoviesActor boysAc1 = new MoviesActor
+            {
+                FkMovie = boys,
+                FkActor = evanRachel
+            };
+            context.MoviesActors.Add(boysAc1);
+
+
+            MoviesActor boysAc2= new MoviesActor
+            {
+                FkMovie = boys,
+                FkActor = heathLeadger
+            };
+            context.MoviesActors.Add(boysAc2);
+
+
+
+            MoviesActor goodPlaceAc1 = new MoviesActor
+            {
+                FkMovie = gp,
+                FkActor = heathLeadger
+            };
+            context.MoviesActors.Add(goodPlaceAc1);
+
+
+            MoviesActor goodPlaceAc2 = new MoviesActor
+            {
+                FkMovie = gp,
+                FkActor = evanRachel
+            };
+            context.MoviesActors.Add(goodPlaceAc2);
+
+
+            MoviesActor ac241 = new MoviesActor
+            {
+                FkMovie = twentyFour,
+                FkActor = markHamill
+            };
+            context.MoviesActors.Add(ac241);
+
+
+            MoviesActor ac242 = new MoviesActor
+            {
+                FkMovie = twentyFour,
+                FkActor = henryFonda
+            };
+            context.MoviesActors.Add(ac242);
+
+
+            MoviesActor twoMenAc1 = new MoviesActor
+            {
+                FkMovie = twoAndHalfMen,
+                FkActor = henryFonda
+            };
+            context.MoviesActors.Add(twoMenAc1);
+
+            MoviesActor twoMenAc2 = new MoviesActor
+            {
+                FkMovie = twoAndHalfMen,
+                FkActor = markHamill
+            };
+            context.MoviesActors.Add(twoMenAc2);
+
+
+            MoviesActor xMenAc1 = new MoviesActor
+            {
+                FkMovie = xMen,
+                FkActor = markHamill
+            };
+            context.MoviesActors.Add(xMenAc1);
+
+            MoviesActor xMenAc2 = new MoviesActor
+            {
+                FkMovie = xMen,
+                FkActor = deniro
+            };
+            context.MoviesActors.Add(xMenAc2);
+
+
+
+            MoviesActor legionAc1 = new MoviesActor
+            {
+                FkMovie = legion,
+                FkActor = deniro
+            };
+            context.MoviesActors.Add(legionAc1);
+
+
+            MoviesActor legionAc2 = new MoviesActor
+            {
+                FkMovie = legion,
+                FkActor = alPacino
+            };
+            context.MoviesActors.Add(legionAc2);
+
+            context.SaveChanges();
+
 
         }
     }
